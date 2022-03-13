@@ -1,0 +1,22 @@
+:root{
+    --fundo-menu: #0026ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: var(--fundo-menu);
+    padding: 5px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline;
+    color: #fff;
+}

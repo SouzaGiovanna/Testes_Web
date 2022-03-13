@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudar Cores Site</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+        </ul>
+    </header>
+
+    <main>
+        <form>
+            <label for="color">Escolha a cor do tema</label>
+            <input type="color" name="color" id="cor">
+
+            <br>
+            <button type="button" onclick="mudarCorSite()">Trocar</button>
+        </form>
+    </main>
+</body>
+</html>
+
+<script type="text/javascript">
+    let value = getComputedStyle(document.documentElement).getPropertyValue('--fundo-menu'); 
+
+    const inputCor = document.getElementById("cor");
+
+    function mudarCorSite(){
+        let cor = inputCor.value;
+
+        document.body.style.setProperty('--fundo-menu', cor);
+    }
+</script>

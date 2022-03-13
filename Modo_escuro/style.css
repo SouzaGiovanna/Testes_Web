@@ -1,0 +1,34 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--color-back);
+}
+
+body[data-theme="t-light"]{
+    --color-bg: #f2f2f2;
+    --color-back: #fff;
+    --color-text: #333;
+}
+
+body[data-theme="t-dark"]{
+    --color-bg: #333;
+    --color-back: #333;
+    --color-text: #f2f2f2;
+}
+
+.my-title {
+    color: var(--color-text);
+}
+
+.my-field {
+    color: var(--color-text);
+    background: var(--color-bg);
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.my-button {
+    background: var(--color-bg);
+    color: var(--color-text);
+    border: none;
+    padding: 0.5rem;
+}
